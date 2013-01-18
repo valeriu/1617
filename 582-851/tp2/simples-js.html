@@ -12,7 +12,7 @@
 
     var noRandom = Math.floor(1+Math.random()*100);
 
-    document.write("<h1>Pages "+noRandom+"</h1>");
+    document.write("<h1>Nomber de pages dans le document: "+noRandom+"</h1>");
 
     var noDepart = window.prompt("No Pages Depart", "");
     var noArrival = window.prompt("No Pages Arrival >"+noDepart, "");
@@ -20,12 +20,13 @@
     if (noRandom > 1 && noArrival > noDepart && noArrival <= noRandom && noDepart >=1)
     	{
     		var noPages = noArrival - noDepart + 1;
-    		var list = [];
+    		
+    		document.write("Impression des pages: ");
 				for (var i = noDepart; i <= noArrival; i++) 
 				{
-   					document.write(list.push(i));
+   					document.write(" "+i);
 				}
-    		document.write(noPages);
+    		document.write("<br />Nombre de pages imprimees:"+noPages);
     	}
     else 
     	{
