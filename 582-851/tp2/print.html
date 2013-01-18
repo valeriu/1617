@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title> Service d'impression</title>
+<link rel="stylesheet" href="style.css" type="text/css"/>
+<script type="text/javascript" language="JavaScript">
+    function randomPages()
+        {
+            var noRandom = Math.floor(1+Math.random()*100);
+            document.getElementById("nopages").innerHTML=noRandom;
+            return;
+        }
+    function pagesAlert()
+        {
+            window.alert("Impression des pages:  \n\nNombre de pages imprimees:" );
+        }
+        //var noPageDepart = pageImprimer.pagesDepart.value;
+        //var noPageArrival = pageImprimer.pagesArrival.value;
+</script>
+
+</head>
+<body onload="randomPages()" >
+
+<div class="container">
+    <div class="content">
+        <h1> Service d'impression</h1>
+    <div class="forminput">
+        <p>Nomber de pages dans le document: <strong id="nopages"></strong></p>
+        <p>Vous desirez imprimer:</p>
+    <form id="pageImprimer" name="pageImprimer" method="post" action="">
+        <dl>
+             <dt><input type="radio" name="radio" id="toutesPages" value="toutesPages"  checked="checked"/></dt>
+            <dd>Toutes les pages</dd>
+            <dt>
+                <input type="radio" name="radio" id="pages" value="pages" />
+               
+            </dt>
+            <dd>Pages 
+                <input type="text" name="pagesDepart" id="pagesDepart" size="4" /> a
+                <input type="text" name="pagesArrival" id="pagesArrival" size="4" />
+            </dd>
+            <dt></dt>
+            <dd><input type="button" name="submitPageImprimer" id="submitPageImprimer" value="Page a Imprimer"  onclick="pagesAlert()" /></dd>
+        </dl>
+    </form>
+    </div> 
+    <p>&nbsp;</p>
+	<!-- end #content --></div>
+<!-- end #container --></div>
+</body>
+</html>

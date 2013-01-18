@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title> Service d'impression</title>
+<link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body>
+
+<script type="text/javascript" language="JavaScript">
+
+
+    var noRandom = Math.floor(1+Math.random()*100);
+
+    document.write("<h1>Pages "+noRandom+"</h1>");
+
+    var noDepart = window.prompt("No Pages Depart", "");
+    var noArrival = window.prompt("No Pages Arrival >"+noDepart, "");
+
+    if (noRandom > 1 && noArrival > noDepart && noArrival <= noRandom && noDepart >=1)
+    	{
+    		var noPages = noArrival - noDepart + 1;
+    		var list = [];
+				for (var i = noDepart; i <= noArrival; i++) 
+				{
+   					document.write(list.push(i));
+				}
+    		document.write(noPages);
+    	}
+    else 
+    	{
+    		document.write("Error!");
+    	}
+
+
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+body {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background: #666666;
+	margin: 0; 
+	padding: 0;
+	text-align: center; 
+	color: #000000;
+}
+.container {
+	width: 46em;
+	background: #FFFFFF;
+	margin: 0 auto; 
+	border: 1px solid #000000;
+	text-align: left; 
+}
+.content {
+	padding: 0 20px; 
+}
+
+.forminput {
+	width: 50%;
+	margin: 0 auto;
+	border: 2px solid #dedede;
+	padding: 0 10px;
+}
+.forminput p {
+	text-align: center;
+}
+
+dt {
+	clear: left;
+	float: left;
+	text-align: right;
+	width: auto;
+   }
+dt, dd {
+	min-height: 22px;
+	padding: 5px 20px;
+}
