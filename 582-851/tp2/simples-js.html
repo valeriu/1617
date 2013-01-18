@@ -17,7 +17,7 @@
     var noDepart = window.prompt("No Pages Depart", "");
     var noArrival = window.prompt("No Pages Arrival >"+noDepart, "");
 
-    if (noRandom > 1 && noArrival > noDepart && noArrival <= noRandom && noDepart >=1)
+    if (noRandom > 1 && noArrival >= noDepart && noArrival <= noRandom && noDepart >=1)
     	{
     		var noPages = noArrival - noDepart + 1;
     		
