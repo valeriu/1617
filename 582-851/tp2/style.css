@@ -6,6 +6,9 @@ body {
 	text-align: center; 
 	color: #000000;
 }
+h1 {
+	text-align: center;
+}
 .container {
 	width: 46em;
 	background: #FFFFFF;
@@ -19,7 +22,7 @@ body {
 
 .forminput {
 	width: 50%;
-	margin: 0 auto;
+	margin: 20px auto;
 	border: 2px solid #dedede;
 	padding: 0 10px;
 }

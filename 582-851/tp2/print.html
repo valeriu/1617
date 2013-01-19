@@ -1,5 +1,15 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+<!-- 
+582-851-MA Programmation Internet I (groupe 01617)
+Travail pratique II 
+
+Thématique : Service d’impression
+ 
+En équipe:
+    Yan Boucher Bouchard
+    Valeriu Tihai
+-->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title> Service d'impression</title>
@@ -25,6 +35,7 @@
 <div class="container">
     <div class="content">
         <h1> Service d'impression</h1>
+   <!-- Partie 1  -->
     <div class="forminput">
         <p>Nomber de pages dans le document: <strong id="nopages"></strong></p>
         <p>Vous desirez imprimer:</p>
@@ -45,7 +56,25 @@
         </dl>
     </form>
     </div> 
-    <p>&nbsp;</p>
+   <!-- Partie 2  -->
+ 
+    <div class="forminput">
+        <p><strong>Options d'impression</strong></p>
+    <form id="optionImprimer" name="optionImprimer" method="post" action="">
+        <dl>
+            <dt><input type="checkbox" name="impressionCouleur" value="Impression en Couleur"> </dt>
+            <dd>Impression en Couleur</dd>
+            <dt><input type="checkbox" name="impressionRectoVerso" value="Impression Recto Verso" ></dt>
+            <dd>Impression Recto Verso</dd>
+            <dt><input type="checkbox" name="impressionOrdinaire" value="Impression Ordinaire" > </dt>
+            <dd>Impression Ordinaire</dd>
+            <dt> </dt>
+            <dd><input type="button" name="submitPageImprimer" id="submitPageImprimer" value="Resumer les preferences" /></dd>
+        </dl>
+    </form>
+    </div> 
+
+
 	<!-- end #content --></div>
 <!-- end #container --></div>
 </body>
