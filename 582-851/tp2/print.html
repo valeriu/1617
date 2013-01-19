@@ -27,7 +27,31 @@ En équipe:
         }
     function pagesOptions()
         {
-            window.alert("Options d\'impression:  \n\nAvec Couleur\nOrdinaire" );
+            //window.alert("Options d\'impression:  \n\nAvec Couleur\nOrdinaire" );
+            var message;
+            message = "Options d\'impression:  \n";
+
+            if (optionImprimer.impressionCouleur.checked==true)
+                {
+                    message = message + "\nAvec Couleur";
+                }
+            if (optionImprimer.impressionRectoVerso.checked==true)
+                {
+                    message = message + "\nRecto Verso";
+                }
+            if (optionImprimer.impressionOrdinaire.checked==true)
+                {
+                    message = message + "\nOrdinaire";
+                }
+            if (optionImprimer.impressionCouleur.checked==false && optionImprimer.impressionRectoVerso.checked==false && optionImprimer.impressionOrdinaire.checked==false)
+                {
+                    window.alert ("Choisi options d\'impression");
+                }
+            else 
+                {
+                    window.alert (message);
+                }
+            
         }
     function unCheck(elementCheck, i)
         {
@@ -70,11 +94,11 @@ En équipe:
         <p><strong>Options d'impression</strong></p>
     <form id="optionImprimer" name="optionImprimer" method="post" action="">
         <dl>
-            <dt><input type="checkbox" id="impressionCouleur" value="impressionCouleur"> </dt>
+            <dt><input type="checkbox" id="impressionCouleur" name="impressionCouleur"> </dt>
             <dd>Impression en Couleur</dd>
-            <dt><input type="checkbox" id="impressionRectoVerso" value="impressionRectoVerso" onclick="unCheck(this, 'impressionOrdinaire','impressionRectoVerso');"></dt>
+            <dt><input type="checkbox" id="impressionRectoVerso" name="impressionRectoVerso" onclick="unCheck(this, 'impressionOrdinaire','impressionRectoVerso');"></dt>
             <dd>Impression Recto Verso</dd>
-            <dt><input type="checkbox" id="impressionOrdinaire" value="impressionOrdinaire" onclick="unCheck(this, 'impressionRectoVerso','impressionOrdinaire');" checked> </dt>
+            <dt><input type="checkbox" id="impressionOrdinaire" name="impressionOrdinaire" onclick="unCheck(this, 'impressionRectoVerso','impressionOrdinaire');" checked> </dt>
             <dd>Impression Ordinaire</dd>
             <dt> </dt>
             <dd><input type="button" id="submitPageImprimer" value="Résumer les préférences" onclick="pagesOptions()" /></dd>
