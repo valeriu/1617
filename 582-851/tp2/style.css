@@ -12,12 +12,12 @@ h1 {
 .container {
 	width: 46em;
 	background: #FFFFFF;
-	margin: 0 auto; 
+	margin: 100px auto; 
 	border: 1px solid #000000;
 	text-align: left; 
 }
 .content {
-	padding: 0 20px; 
+	padding: 0 20px;
 }
 
 .forminput {
