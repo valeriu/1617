@@ -24,6 +24,10 @@ En équipe:
     function pagesAlert()
         {
             window.alert("Impression des pages:  \n\nNombre de pages imprimees:" );
+                var myObj1 = document.getElementById("p1");
+                myObj1.style.display="none"; // change display to none
+                var myObj2 = document.getElementById("p2");
+                myObj2.style.display="block"; // change display to block
         }
     function pagesOptions()
         {
@@ -50,6 +54,10 @@ En équipe:
             else 
                 {
                     window.alert (message);
+                var myObj1 = document.getElementById("p1");
+                myObj1.style.display="block"; // change display to block    
+                var myObj2 = document.getElementById("p2");
+                myObj2.style.display="none"; // change display to none  
                 }
             
         }
@@ -65,7 +73,7 @@ En équipe:
 <body onload="randomPages()" >
 
 <div class="container">
-    <div class="content">
+    <div id="p1">
         <h1> Service d'impression</h1>
    <!-- Partie 1  -->
     <div class="forminput">
@@ -87,8 +95,10 @@ En équipe:
             <dd><input type="button" name="submitPageImprimer" id="submitPageImprimer" value="PageImprimer"  onclick="pagesAlert()" /></dd>
         </dl>
     </form>
-    </div> 
+    </div>
+    </div> <!-- end #p1 -->
    <!-- Partie 2  -->
+   <div id="p2">
         <h1>Options d'impression</h1>
     <div class="forminput">
         <p><strong>Options d'impression</strong></p>
@@ -105,9 +115,8 @@ En équipe:
         </dl>
     </form>
     </div> 
+	</div><!-- end #p2 -->
 
-
-	<!-- end #content --></div>
 <!-- end #container --></div>
 </body>
 </html>

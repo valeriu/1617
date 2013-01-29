@@ -9,16 +9,15 @@ body {
 h1 {
 	text-align: center;
 }
-.container {
+#p1, #p2 {
 	width: 46em;
 	background: #FFFFFF;
 	margin: 100px auto; 
 	border: 1px solid #000000;
 	text-align: left; 
-}
-.content {
 	padding: 0 20px;
 }
+#p2{ display:none;}
 
 .forminput {
 	width: 50%;
