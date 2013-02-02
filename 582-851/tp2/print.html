@@ -7,7 +7,7 @@ Travail pratique II
 Thématique : Service d’impression
  
 En équipe:
-    Yan Boucher Bouchard "ALLLLLLLLOOOOO!!!!"
+    Yan Boucher Bouchard
     Valeriu Tihai
 -->
 <head>
@@ -19,11 +19,18 @@ En équipe:
         {
             var noRandom = Math.floor(1+Math.random()*100);
             document.getElementById("nopages").innerHTML=noRandom;
-            return;
+            return noRandom;
         }
     function pagesAlert()
         {
-            window.alert("Impression des pages:  \n\nNombre de pages imprimees:" );
+            var message = "Impression des pages: ";
+            if (pageImprimer.toutesPages.checked==true) {
+                pagesTot = window.parseInt(document.getElementById("nopages").innerHTML);
+                for (var i = 0; i < pagesTot; i++) {
+                    message = message + (i+1) + " ";
+                }
+            }
+            window.alert(message + "\n\nNombre de pages imprimees: " + pagesTot);
                 var myObj1 = document.getElementById("p1");
                 myObj1.style.display="none"; // change display to none
                 var myObj2 = document.getElementById("p2");
@@ -74,10 +81,10 @@ En équipe:
 
 <div class="container">
     <div id="p1">
-        <h1> Service d'impression</h1>
+        <h1>Service d'impressions</h1>
    <!-- Partie 1  -->
     <div class="forminput">
-        <p>Nomber de pages dans le document: <strong id="nopages"></strong></p>
+        <p>Nombre de pages du document: <strong id="nopages"></strong></p>
         <p>Vous desirez imprimer:</p>
     <form id="pageImprimer" name="pageImprimer" method="post" action="">
         <dl>
