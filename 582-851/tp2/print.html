@@ -43,7 +43,7 @@ En équipe:
                     verif = false;
                 } else {
                     var virgule =  (pageImprimer.pagesDepart.value % 1) + (pageImprimer.pagesArrival.value % 1);
-                    console.log(virgule);
+                    // debug console.log(virgule);
                     if   (((virgule != 0) && (isNaN(pageImprimer.pagesDepart.value) == false) ) ||
                          (( virgule != 0) && (isNaN(pageImprimer.pagesArrival.value)))) {
                         // valide les valeurs entieres
@@ -120,6 +120,12 @@ En équipe:
                 myObj1.style.display="block"; // change display to block    
                 var myObj2 = document.getElementById("p2");
                 myObj2.style.display="none"; // change display to none
+                //reset checkbox value
+                optionImprimer.impressionCouleur.checked = false;
+                optionImprimer.impressionRectoVerso.checked = false;
+                optionImprimer.impressionOrdinaire.checked = true;
+
+                
                 }
             randomPages();
         }
