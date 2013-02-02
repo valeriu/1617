@@ -42,14 +42,15 @@ En équipe:
                     verif = false;
                 } else {
                     var virgule =  (window.parseFloat(pageImprimer.pagesDepart.value) % 1) + (window.parseFloat(pageImprimer.pagesArrival.value) % 1);
-                    if (virgule != 0)
-                    {
+                    if (virgule != 0) {
+                        // valide les valeurs entieres
                         message = "Veuillez entrer des valeurs ENTIERES dans les deux cases...";
                         pagesTot = "Aucune...";
                         verif = false;
                     } else {
-                        if (window.parseInt(pageImprimer.pagesDepart.value) < 1 || (window.parseInt(pageImprimer.pagesArrival.value) > pagesTot) || 
-                            (window.parseInt(pageImprimer.pagesArrival.value) < 0)) { 
+                        if ((window.parseInt(pageImprimer.pagesDepart.value) < 1) || (window.parseInt(pageImprimer.pagesArrival.value) > pagesTot) || 
+                            (window.parseInt(pageImprimer.pagesArrival.value) < 0)) 
+                        { 
                         //verifie si les pages existent
                             message = "Les valeurs entrees ne sont pas comprisent entre 1 et " + pagesTot + " pages...";
                             pagesTot = "Aucune...";
@@ -144,7 +145,7 @@ En équipe:
                 <input type="text" name="pagesArrival" id="pagesArrival" size="4" />
             </dd>
             <dt></dt>
-            <dd><input type="button" name="submitPageImprimer" id="submitPageImprimer" value="PageImprimer"  onclick="pagesAlert()" /></dd>
+            <dd><input type="button" name="submitPageImprimer" id="submitPageImprimer" value="Imprimer"  onclick="pagesAlert()" /></dd>
         </dl>
     </form>
     </div>
