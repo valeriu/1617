@@ -24,17 +24,28 @@ En équipe:
     function pagesAlert()
         {
             var message = "Impression des pages: ";
+            var verif = false;
             if (pageImprimer.toutesPages.checked==true) {
-                pagesTot = window.parseInt(document.getElementById("nopages").innerHTML);
+                var pagesTot = window.parseInt(document.getElementById("nopages").innerHTML);
                 for (var i = 0; i < pagesTot; i++) {
                     message = message + (i+1) + " ";
                 }
+                verif = true;
+            } else {
+                if (isNaN(window.parseInt(pageImprimer.pagesDepart.value)) || isNaN(window.parseInt(pageImprimer.pagesArrival.value))) {
+                    message = "Veuillez entrer des valeurs valides dans les deux cases...";
+                    pagesTot = "Aucune..."
+                    verif = false;
+                }
             }
             window.alert(message + "\n\nNombre de pages imprimees: " + pagesTot);
+                
+            if (verif == true) {
                 var myObj1 = document.getElementById("p1");
                 myObj1.style.display="none"; // change display to none
                 var myObj2 = document.getElementById("p2");
                 myObj2.style.display="block"; // change display to block
+            }
         }
     function pagesOptions()
         {
@@ -56,7 +67,7 @@ En équipe:
                 }
             if (optionImprimer.impressionCouleur.checked==false && optionImprimer.impressionRectoVerso.checked==false && optionImprimer.impressionOrdinaire.checked==false)
                 {
-                    window.alert ("Choisi options d\'impression");
+                    window.alert ("S.V.P. choisir les options d\'impression...");
                 }
             else 
                 {
@@ -64,9 +75,9 @@ En équipe:
                 var myObj1 = document.getElementById("p1");
                 myObj1.style.display="block"; // change display to block    
                 var myObj2 = document.getElementById("p2");
-                myObj2.style.display="none"; // change display to none  
+                myObj2.style.display="none"; // change display to none
                 }
-            
+            randomPages();
         }
     function unCheck(elementCheck, i)
         {
