@@ -56,12 +56,18 @@ En équipe:
                             pagesTot = "Aucune...";
                             verif = false;
                         } else {
-                            pagesTot = 0;
-                            for (var j = window.parseInt(pageImprimer.pagesDepart.value); j <= window.parseInt(pageImprimer.pagesArrival.value); j++) {
+                            if (window.parseInt(pageImprimer.pagesDepart.value) > window.parseInt(pageImprimer.pagesArrival.value)) {
+                                message = "Les valeurs entrees ne sont pas en ordre croissant..."
+                                pagesTot = "Aucune...";
+                                verif = false;
+                            } else {
+                                pagesTot = 0;
+                                for (var j = window.parseInt(pageImprimer.pagesDepart.value); j <= window.parseInt(pageImprimer.pagesArrival.value); j++) {
                                 message += j + " ";
                                 pagesTot++;
                             }
                             verif = true;
+                            }
                         }
                     }
                 }
