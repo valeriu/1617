@@ -49,7 +49,8 @@ En équipe:
                         pagesTot = "Aucune...";
                         verif = false;
                     } else {
-                        if (window.parseInt(pageImprimer.pagesDepart.value) < 1 || window.parseInt(pageImprimer.pagesArrival.value) > pagesTot) { 
+                        if (window.parseInt(pageImprimer.pagesDepart.value) < 1 || (window.parseInt(pageImprimer.pagesArrival.value) > pagesTot) || 
+                            (window.parseInt(pageImprimer.pagesArrival.value) < 0)) { 
                         //verifie si les pages existent
                             message = "Les valeurs entrees ne sont pas comprisent entre 1 et " + pagesTot + " pages..."
                             pagesTot = "Aucune...";
