@@ -42,8 +42,10 @@ En équipe:
                     pagesTot = "Aucune...";
                     verif = false;
                 } else {
-                    var virgule =  (window.parseFloat(pageImprimer.pagesDepart.value) % 1) + (window.parseFloat(pageImprimer.pagesArrival.value) % 1);
-                    if (virgule != 0) {
+                    var virgule =  (pageImprimer.pagesDepart.value % 1) + (pageImprimer.pagesArrival.value % 1);
+                    console.log(virgule);
+                    if   (((virgule != 0) && (isNaN(pageImprimer.pagesDepart.value) == false) ) ||
+                         (( virgule != 0) && (isNaN(pageImprimer.pagesArrival.value)))) {
                         // valide les valeurs entieres
                         message = "Veuillez entrer des valeurs ENTIERES dans les deux cases...";
                         pagesTot = "Aucune...";
