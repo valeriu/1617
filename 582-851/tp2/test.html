@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- 
+582-851-MA Programmation Internet I (groupe 01617)
+Travail pratique II 
+
+Thématique : Service d’impression
+ 
+En équipe:
+    Yan Boucher Bouchard
+    Valeriu Tihai
+-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title> Service d'impression</title>
+<link rel="stylesheet" href="style.css" type="text/css"/>
+<script type="text/javascript" language="JavaScript">
+    function randomPages()
+        {
+            var noRandom = Math.floor(1+Math.random()*100);
+            document.getElementById("nopages").innerHTML=noRandom;
+            return noRandom;
+        }
+   function verifierNumero (nomber)
+    {
+        var virgule = parseFloat(nomber) % 1;
+        var verifier = true;
+        
+        if (isNaN(nomber)){ return false; }
+        if ((virgule !=0 && isNaN(nomber) == false) || (nomber <= 0)) { return false;} 
+        if (verifier) { return true; }
+    }
+
+    function pagesAlert()
+        {
+            var message = "Impression des pages: ";
+            var pagesTot = window.parseInt(document.getElementById("nopages").innerHTML);
+            var depart = pageImprimer.pagesDepart.value; 
+            var arrival = pageImprimer.pagesArrival.value;
+
+
+            if (pageImprimer.toutesPages.checked==true) { 
+                //verifie quelle bouton radio est selectionne
+                for (var i = 0; i < pagesTot; i++) {
+                    message += (i+1) + " ";
+                }
+                verif = true;
+            } 
+            else {
+
+
+                if ((verifierNumero (depart) == true && verifierNumero (arrival) == true) && (depart <= pagesTot && arrival <= pagesTot && depart <= arrival))
+                    {
+                        pagesTot = 0;
+                        for (var j = window.parseInt(pageImprimer.pagesDepart.value); j <= window.parseInt(pageImprimer.pagesArrival.value); j++) 
+                        {
+                            message += j + " ";
+                            pagesTot++;
+                        }
+                     verif = true;
+                    }
+                else {
+                     message = "Veuillez entrer des valeurs VALIDES dans les deux cases... \n - Le numero de page de fin ne peut etre superieur au total des pages du document \n - Le numero de page de debut ne peut pas etre superieur au numero de page de fin";
+                     pagesTot = "Aucune...";
+                     verif = false;
+                    }
+
+                }
+            
+            window.alert(message + "\n\nNombre de pages imprimees: " + pagesTot);
+                
+            if (verif == true) {
+                // SI les selections sont valides, on passe a la prochaine etape...
+                var myObj1 = document.getElementById("p1");
+                myObj1.style.display="none"; // change display to none
+                var myObj2 = document.getElementById("p2");
+                myObj2.style.display="block"; // change display to block
+                pageImprimer.toutesPages.checked = true;
+                pageImprimer.pagesDepart.value = "";
+                pageImprimer.pagesArrival.value = "";
+            }
+        }
+    function pagesOptions()
+        {
+            //window.alert("Options d\'impression:  \n\nAvec Couleur\nOrdinaire" );
+            var message;
+            message = "Options d\'impression:  \n";
+
+            if (optionImprimer.impressionCouleur.checked==true)
+                {
+                    message = message + "\nAvec Couleur";
+                }
+            if (optionImprimer.impressionRectoVerso.checked==true)
+                {
+                    message = message + "\nRecto Verso";
+                }
+            if (optionImprimer.impressionOrdinaire.checked==true)
+                {
+                    message = message + "\nOrdinaire";
+                }
+            if (optionImprimer.impressionCouleur.checked==false && optionImprimer.impressionRectoVerso.checked==false && optionImprimer.impressionOrdinaire.checked==false)
+                {
+                    window.alert ("S.V.P. choisir les options d\'impression...");
+                }
+            else 
+                {
+                    window.alert (message);
+                var myObj1 = document.getElementById("p1");
+                myObj1.style.display="block"; // change display to block    
+                var myObj2 = document.getElementById("p2");
+                myObj2.style.display="none"; // change display to none
+                //reset checkbox value
+                optionImprimer.impressionCouleur.checked = false;
+                optionImprimer.impressionRectoVerso.checked = false;
+                optionImprimer.impressionOrdinaire.checked = true;
+
+                
+                }
+            randomPages();
+        }
+    function unCheck(elementCheck, i)
+        {
+            elementCheck.form.elements[i].checked = false;
+        }    
+    //var noPageDepart = pageImprimer.pagesDepart.value;
+    //var noPageArrival = pageImprimer.pagesArrival.value;
+</script>
+
+</head>
+<body onload="randomPages()" >
+
+<div class="container">
+    <div id="p1">
+        <h1>Service d'impressions</h1>
+   <!-- Partie 1  -->
+    <div class="forminput">
+        <p>Nombre de pages du document: <strong id="nopages"></strong></p>
+        <p>Vous desirez imprimer:</p>
+    <form id="pageImprimer" name="pageImprimer" method="post" action="">
+        <dl>
+             <dt><input type="radio" name="radio" id="toutesPages" value="toutesPages"  checked="checked"/></dt>
+            <dd>Toutes les pages</dd>
+            <dt>
+                <input type="radio" name="radio" id="pages" value="pages" />
+               
+            </dt>
+            <dd>Pages 
+                <input type="text" name="pagesDepart" id="pagesDepart" size="4" /> a
+                <input type="text" name="pagesArrival" id="pagesArrival" size="4" />
+            </dd>
+            <dt></dt>
+            <dd><input type="button" name="submitPageImprimer" id="submitPageImprimer" value="Imprimer"  onclick="pagesAlert()" /></dd>
+        </dl>
+    </form>
+    </div>
+    </div> <!-- end #p1 -->
+   <!-- Partie 2  -->
+   <div id="p2">
+        <h1>Options d'impression</h1>
+    <div class="forminput">
+        <p><strong>Options d'impression</strong></p>
+    <form id="optionImprimer" name="optionImprimer" method="post" action="">
+        <dl>
+            <dt><input type="checkbox" id="impressionCouleur" name="impressionCouleur"> </dt>
+            <dd>Impression en Couleur</dd>
+            <dt><input type="checkbox" id="impressionRectoVerso" name="impressionRectoVerso" onclick="unCheck(this, 'impressionOrdinaire','impressionRectoVerso');"></dt>
+            <dd>Impression Recto Verso</dd>
+            <dt><input type="checkbox" id="impressionOrdinaire" name="impressionOrdinaire" onclick="unCheck(this, 'impressionRectoVerso','impressionOrdinaire');" checked> </dt>
+            <dd>Impression Ordinaire</dd>
+            <dt> </dt>
+            <dd><input type="button" id="submitPageImprimer" value="Résumer les préférences" onclick="pagesOptions()" /></dd>
+        </dl>
+    </form>
+    </div> 
+	</div><!-- end #p2 -->
+
+<!-- end #container --></div>
+</body>
+</html>
