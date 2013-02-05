@@ -43,9 +43,8 @@ En équipe:
                     verif = false;
                 } else {
                     var virgule =  (pageImprimer.pagesDepart.value % 1) + (pageImprimer.pagesArrival.value % 1);
-                    // debug console.log(virgule);
-                    if   (((virgule != 0) && (isNaN(pageImprimer.pagesDepart.value) == false) ) ||
-                         (( virgule != 0) && (isNaN(pageImprimer.pagesArrival.value)))) {
+                
+                    if   (virgule != 0) {
                         // valide les valeurs entieres
                         message = "Veuillez entrer des valeurs ENTIERES dans les deux cases...";
                         pagesTot = "Aucune...";
@@ -82,10 +81,10 @@ En équipe:
                 
             if (verif == true) {
                 // SI les selections sont valides, on passe a la prochaine etape...
-                var myObj1 = document.getElementById("p1");
-                myObj1.style.display="none"; // change display to none
-                var myObj2 = document.getElementById("p2");
-                myObj2.style.display="block"; // change display to block
+                var partie1 = document.getElementById("p1");
+                partie1.style.display="none"; // change display to none
+                var partie2 = document.getElementById("p2");
+                partie2.style.display="block"; // change display to block
                 pageImprimer.toutesPages.checked = true;
                 pageImprimer.pagesDepart.value = "";
                 pageImprimer.pagesArrival.value = "";
@@ -93,7 +92,6 @@ En équipe:
         }
     function pagesOptions()
         {
-            //window.alert("Options d\'impression:  \n\nAvec Couleur\nOrdinaire" );
             var message;
             message = "Options d\'impression:  \n";
 
@@ -116,14 +114,14 @@ En équipe:
             else 
                 {
                     window.alert (message);
-                var myObj1 = document.getElementById("p1");
-                myObj1.style.display="block"; // change display to block    
-                var myObj2 = document.getElementById("p2");
-                myObj2.style.display="none"; // change display to none
-                //reset checkbox value
-                optionImprimer.impressionCouleur.checked = false;
-                optionImprimer.impressionRectoVerso.checked = false;
-                optionImprimer.impressionOrdinaire.checked = true;
+                    var partie1 = document.getElementById("p1");
+                    partie1.style.display="block"; // change display to block    
+                    var partie2 = document.getElementById("p2");
+                    partie2.style.display="none"; // change display to none
+                    //reset checkbox value
+                    optionImprimer.impressionCouleur.checked = false;
+                    optionImprimer.impressionRectoVerso.checked = false;
+                    optionImprimer.impressionOrdinaire.checked = true;
 
                 
                 }
@@ -133,8 +131,6 @@ En équipe:
         {
             elementCheck.form.elements[i].checked = false;
         }    
-    //var noPageDepart = pageImprimer.pagesDepart.value;
-    //var noPageArrival = pageImprimer.pagesArrival.value;
 </script>
 
 </head>
