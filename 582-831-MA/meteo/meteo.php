@@ -1,9 +1,11 @@
 <html>
 <head>
 	<title>Meteo - Yan et Valeriu</title>
+	<script type="text/javascript" src="./js/lib.js"></script>
 </head>
 <body>
-<select>
+<form action="#" method="POST">
+	<select id="pays" name="pays">
 	<option>Afghanistan</option>
 	<option>Åland Islands</option>
 	<option>Albania</option>
@@ -253,6 +255,12 @@
 	<option>Yemen</option>
 	<option>Zambia</option>
 	<option>Zimbabwe</option>
-</select>
+	</select>
+	<?php 
+		if(isset($_POST["pays"])) {
+			
+		}
+	?>
+</form>
 </body>
 </html>
