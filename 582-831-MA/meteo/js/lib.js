@@ -1,9 +1,7 @@
-window.addEventListener("load", loadEvents);
+window.addEventListener('load', function(){
+    var select = document.getElementById('paysList');
 
-function loadEvents() {
-	document.getElementById("pays").addEventListener("change", generateCities);
-}
-
-function generateCities(city) {
-	
-}
+    select.addEventListener('change', function(){
+        window.location = 'meteo.php?pays=' + this.value;
+    }, false);
+}, false);
