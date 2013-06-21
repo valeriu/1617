@@ -1,7 +1,21 @@
-window.addEventListener('load', function(){
-    var select = document.getElementById('paysList');
+/*window.addEventListener('load', function(){
+	var selectPays = document.getElementById('paysList');
+	var selectCity = document.getElementById('cityList');
+	var generatyUrl = "";
 
-    select.addEventListener('change', function(){
-        window.location = 'meteo.php?pays=' + this.value;
-    }, false);
+	selectPays.addEventListener('change', function(){
+		//generatyUrl = "meteo.php?pays="+this.value+"&";
+		generatyUrl += 'meteo.php?pays=' + this.value;
+		 window.location =  generatyUrl;
+	}, false);
+
+
+	selectCity.addEventListener('change', function(){
+		generatyUrl = window.location.href+ '&city=' + this.value;
+		 window.location =  generatyUrl;
+	}, false);
+
+console.log(generatyUrl);
+
 }, false);
+*/
