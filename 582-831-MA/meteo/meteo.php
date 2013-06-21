@@ -8,24 +8,13 @@
 	<title>Meteo - Yan et Valeriu</title>
 	<script type="text/javascript" src="./js/lib.js"></script>
 	<script type="text/javascript">
-		window.addEventListener('load', function(){
+	window.addEventListener('load', function(){
 		var selectPays = document.getElementById('paysList');
 		var selectCity = document.getElementById('cityList');
 		
-		selectPays.addEventListener('change', function(){
-			//generatyUrl = "meteo.php?pays="+this.value+"&";
-			 window.location =  "meteo.php?pays=" + this.value;
-		}, false);
-
-
-		selectCity.addEventListener('change', function(){
-			//generatyUrl = window.location.href+ '&city=' + this.value;
-			 window.location =  "meteo.php?pays=<?php echo $_GET["pays"];?>&city="+this.value;
-		}, false);
-
-			
-
-		}, false);
+		selectPays.addEventListener('change', function(){ window.location =  "meteo.php?pays=" + this.value;}, false);
+		selectCity.addEventListener('change', function(){ window.location =  "meteo.php?pays=<?php echo $_GET["pays"];?>&city="+this.value;	}, false);
+	}, false);
 	</script>
 </head>
 <body>
@@ -99,7 +88,6 @@ echo "</select>";
 			}
 		}		
 	?>
-
 </form>
 </body>
 </html>
