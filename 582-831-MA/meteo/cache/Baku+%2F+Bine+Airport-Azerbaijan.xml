@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<string xmlns="http://www.webserviceX.NET">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;CurrentWeather&gt;
+  &lt;Location&gt;Baku / Bine Airport, Azerbaijan (UBBB) 40-27N 050-04E -1M&lt;/Location&gt;
+  &lt;Time&gt;Jun 27, 2013 - 09:00 AM EDT / 2013.06.27 1300 UTC&lt;/Time&gt;
+  &lt;Wind&gt; from the N (350 degrees) at 13 MPH (11 KT):0&lt;/Wind&gt;
+  &lt;Visibility&gt; greater than 7 mile(s):0&lt;/Visibility&gt;
+  &lt;Temperature&gt; 84 F (29 C)&lt;/Temperature&gt;
+  &lt;DewPoint&gt; 55 F (13 C)&lt;/DewPoint&gt;
+  &lt;RelativeHumidity&gt; 37%&lt;/RelativeHumidity&gt;
+  &lt;Pressure&gt; 29.91 in. Hg (1013 hPa)&lt;/Pressure&gt;
+  &lt;Status&gt;Success&lt;/Status&gt;
+&lt;/CurrentWeather&gt;</string>

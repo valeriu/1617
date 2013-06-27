@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<string xmlns="http://www.webserviceX.NET">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;CurrentWeather&gt;
+  &lt;Location&gt;Cabinda, Angola (FNCA) 05-33S 012-11E 20M&lt;/Location&gt;
+  &lt;Time&gt;Aug 30, 2012 - 02:00 AM EDT / 2012.08.30 0600 UTC&lt;/Time&gt;
+  &lt;Wind&gt; Calm:0&lt;/Wind&gt;
+  &lt;Visibility&gt; greater than 7 mile(s):0&lt;/Visibility&gt;
+  &lt;SkyConditions&gt; partly cloudy&lt;/SkyConditions&gt;
+  &lt;Temperature&gt; 73 F (23 C)&lt;/Temperature&gt;
+  &lt;DewPoint&gt; 69 F (21 C)&lt;/DewPoint&gt;
+  &lt;RelativeHumidity&gt; 88%&lt;/RelativeHumidity&gt;
+  &lt;Pressure&gt; 29.97 in. Hg (1015 hPa)&lt;/Pressure&gt;
+  &lt;Status&gt;Success&lt;/Status&gt;
+&lt;/CurrentWeather&gt;</string>

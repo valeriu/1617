@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<string xmlns="http://www.webserviceX.NET">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;CurrentWeather&gt;
+  &lt;Location&gt;Saint Hubert Airport , Canada (CYHU) 45-31N 073-25W&lt;/Location&gt;
+  &lt;Time&gt;Jun 27, 2013 - 11:00 AM EDT / 2013.06.27 1500 UTC&lt;/Time&gt;
+  &lt;Wind&gt; from the NNE (030 degrees) at 8 MPH (7 KT):0&lt;/Wind&gt;
+  &lt;Visibility&gt; 5 mile(s):0&lt;/Visibility&gt;
+  &lt;SkyConditions&gt; overcast&lt;/SkyConditions&gt;
+  &lt;Temperature&gt; 66 F (19 C)&lt;/Temperature&gt;
+  &lt;DewPoint&gt; 62 F (17 C)&lt;/DewPoint&gt;
+  &lt;RelativeHumidity&gt; 88%&lt;/RelativeHumidity&gt;
+  &lt;Pressure&gt; 29.79 in. Hg (1008 hPa)&lt;/Pressure&gt;
+  &lt;Status&gt;Success&lt;/Status&gt;
+&lt;/CurrentWeather&gt;</string>

@@ -52,4 +52,27 @@
 		}
 		return $meteoclass;	
 	}
+
+	function skyclass ($sky) {
+		$condition = preg_replace("/ /", "", $sky);
+
+		switch ($condition) {
+			case "fog" :
+			case "haze" :
+			case "sunny" :
+			case "overcast" :
+			case "blowingsnow" :
+			case "drizzle" :
+			case "mostlycloudy" :
+			case "partlycloudy" :
+			case "rain" :
+			case "showers" :
+			case "snow" :
+			case "thunderstorm" :			
+				return $condition;
+				break;
+			default :
+				return "N_A";
+		}
+	}
 ?>

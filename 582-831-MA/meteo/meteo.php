@@ -140,5 +140,10 @@
 		}		
 	?>
 </form>
+
+
+<span class="box1">
+		<span aria-hidden="true" class="<?php echo skyclass($mySkyConditions[1]); ?>"></span>
+</span>
 </body>
 </html>
