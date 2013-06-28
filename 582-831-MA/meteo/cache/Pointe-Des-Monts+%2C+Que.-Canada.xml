@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<string xmlns="http://www.webserviceX.NET">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;CurrentWeather&gt;
+  &lt;Location&gt;Pointe-Des-Monts , Que., Canada (CWTG) 49-19N 067-23W&lt;/Location&gt;
+  &lt;Time&gt;Jun 27, 2013 - 08:00 PM EDT / 2013.06.28 0000 UTC&lt;/Time&gt;
+  &lt;Wind&gt; from the NE (040 degrees) at 12 MPH (10 KT):0&lt;/Wind&gt;
+  &lt;Temperature&gt; 53.8 F (12.1 C)&lt;/Temperature&gt;
+  &lt;DewPoint&gt; 42.6 F (5.9 C)&lt;/DewPoint&gt;
+  &lt;RelativeHumidity&gt; 65%&lt;/RelativeHumidity&gt;
+  &lt;PressureTendency&gt; 0.00 inches (0.0 hPa) higher than three hours ago&lt;/PressureTendency&gt;
+  &lt;Status&gt;Success&lt;/Status&gt;
+&lt;/CurrentWeather&gt;</string>

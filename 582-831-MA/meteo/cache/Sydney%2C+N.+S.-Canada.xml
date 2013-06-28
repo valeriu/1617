@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<string xmlns="http://www.webserviceX.NET">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;CurrentWeather&gt;
+  &lt;Location&gt;Sydney, N. S., Canada (CYQY) 46-10N 060-03W 62M&lt;/Location&gt;
+  &lt;Time&gt;Jun 27, 2013 - 08:00 PM EDT / 2013.06.28 0000 UTC&lt;/Time&gt;
+  &lt;Wind&gt; from the E (090 degrees) at 3 MPH (3 KT):0&lt;/Wind&gt;
+  &lt;Visibility&gt; 15 mile(s):0&lt;/Visibility&gt;
+  &lt;SkyConditions&gt; overcast&lt;/SkyConditions&gt;
+  &lt;Temperature&gt; 53 F (12 C)&lt;/Temperature&gt;
+  &lt;DewPoint&gt; 48 F (9 C)&lt;/DewPoint&gt;
+  &lt;RelativeHumidity&gt; 81%&lt;/RelativeHumidity&gt;
+  &lt;Pressure&gt; 30 in. Hg (1015 hPa)&lt;/Pressure&gt;
+  &lt;Status&gt;Success&lt;/Status&gt;
+&lt;/CurrentWeather&gt;</string>

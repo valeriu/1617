@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<string xmlns="http://www.webserviceX.NET">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;CurrentWeather&gt;
+  &lt;Location&gt;Hamilton Airport , Canada (CYHM) 43-10N 079-56W&lt;/Location&gt;
+  &lt;Time&gt;Jun 27, 2013 - 08:00 PM EDT / 2013.06.28 0000 UTC&lt;/Time&gt;
+  &lt;Wind&gt; from the NW (320 degrees) at 2 MPH (2 KT):0&lt;/Wind&gt;
+  &lt;Visibility&gt; 15 mile(s):0&lt;/Visibility&gt;
+  &lt;SkyConditions&gt; mostly cloudy&lt;/SkyConditions&gt;
+  &lt;Temperature&gt; 71 F (22 C)&lt;/Temperature&gt;
+  &lt;DewPoint&gt; 64 F (18 C)&lt;/DewPoint&gt;
+  &lt;RelativeHumidity&gt; 78%&lt;/RelativeHumidity&gt;
+  &lt;Pressure&gt; 29.7 in. Hg (1005 hPa)&lt;/Pressure&gt;
+  &lt;Status&gt;Success&lt;/Status&gt;
+&lt;/CurrentWeather&gt;</string>

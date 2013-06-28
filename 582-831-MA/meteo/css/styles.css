@@ -10,53 +10,54 @@
 }
 
 /*http://www.colorhexa.com/035898*/
-.meteo-70 {
+#meteo-70{
 	background-color: #ff3300;
 }
-.meteo-60 {
+#meteo-60{
 	background-color: #ff6600;
 }
-.meteo-50 {
+#meteo-50{
 	background-color: #ff8000;
 }
-.meteo-40 {
+#meteo-40{
 	background-color: #ff9900;
 }
-.meteo-30 {
+#meteo-30{
 	background-color: #ffb200;
 }
-.meteo-20 {
+#meteo-20 {
 	background-color: #ffcc00;
 }
-.meteo-10 {
+#meteo-10{
 	background-color: #ffe500;
 }
-.meteo-0 {
+#meteo-0 {
 	background-color: #fffdeb;
 }
-.meteo--10 {
+#meteo--10 {
 	background-color: #e6f5fc;
 }
-.meteo--20 {
+#meteo--20 {
 	background-color: #c3e7f8;
 }
-.meteo--30 {
+#meteo--30 {
 	background-color: #a0daf4;
 }
-.meteo--40 {
+#meteo--40 {
 	background-color: #7cccf0;
 }
-.meteo--50 {
+#meteo--50 {
 	background-color: #59beec;
 }
-.meteo--60 {
+#meteo--60 {
 	background-color: #36b0e8;
 }
-.meteo--70 {
+#meteo--70 {
 	background-color: #19a0dd;
 }
-.meteo {
-	background-color: #fff;
+
+#skycondition {
+	font-size: 128px;
 }
 
 /* Use the following CSS code if you want to use data attributes for inserting your icons */
@@ -156,7 +157,6 @@ you can use the generic selector below, but it's slower:
 	.icon{
 	width: 128px;
 	height: 128px;
-	background: #fff url(sun.png) 0 0 no-repeat
 	}
 	.time, .wind, .visibility, .dewpoint, .humidity, .pressure{
 		margin: 10px 0;

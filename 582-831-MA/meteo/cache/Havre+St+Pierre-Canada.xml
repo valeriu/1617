@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<string xmlns="http://www.webserviceX.NET">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;CurrentWeather&gt;
+  &lt;Location&gt;Havre St Pierre , Canada (CYGV) 50-17N 063-37W&lt;/Location&gt;
+  &lt;Time&gt;Jun 27, 2013 - 08:00 PM EDT / 2013.06.28 0000 UTC&lt;/Time&gt;
+  &lt;Wind&gt; from the NE (050 degrees) at 3 MPH (3 KT):0&lt;/Wind&gt;
+  &lt;Visibility&gt; 9 mile(s):0&lt;/Visibility&gt;
+  &lt;SkyConditions&gt; overcast&lt;/SkyConditions&gt;
+  &lt;Temperature&gt; 50 F (10 C)&lt;/Temperature&gt;
+  &lt;DewPoint&gt; 44 F (7 C)&lt;/DewPoint&gt;
+  &lt;RelativeHumidity&gt; 81%&lt;/RelativeHumidity&gt;
+  &lt;Pressure&gt; 30.06 in. Hg (1017 hPa)&lt;/Pressure&gt;
+  &lt;Status&gt;Success&lt;/Status&gt;
+&lt;/CurrentWeather&gt;</string>

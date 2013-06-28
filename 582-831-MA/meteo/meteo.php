@@ -118,20 +118,21 @@
 						$Status = 			preg_match('/Status&gt;(.*)&lt;/', $getmeteourl, $myStatus);
 							
 						echo meteoclass($myTemperatureC[1]);
-				if (isset($myTemperatureC[1])) echo "<div class=".meteoclass($myTemperatureC[1]).">";
+				if (isset($myTemperatureC[1])) echo "<div class='meteo' id=".meteoclass($myTemperatureC[1]).">";
 					if (isset($myStatus[1]) && $myStatus[1] == "Success") {
 						//if (isset($myTemperatureC[1])) meteoclass($myTemperatureC[1]). "<br />";
-						if (isset($myLocation[1])) echo "<br>Location : " . $myLocation[1] . "<br />";
-						if (isset($myTime[1])) echo "Time : " . $myTime[1] . "<br />";
-						if (isset($myWind[1])) echo "Wind : " . $myWind[1] . "<br />";
-						if (isset($myVisibility[1])) echo "Visibility : " . $myVisibility[1] . "<br />";
-						if (isset($mySkyConditions[1])) echo "SkyConditions : " . $mySkyConditions[1] . "<br />";
-						if (isset($myTemperature[1])) echo "Temperature : " . $myTemperature[1] . "<br />";
-						if (isset($myDewPoint[1])) echo "DewPoint : " . $myDewPoint[1] . "<br />";
-						if (isset($myRelativeHumidity[1])) echo "RelativeHumidity : " . $myRelativeHumidity[1] . "<br />";
-						if (isset($myPressure[1])) echo "Pressure : " . $myPressure[1] . "<br />";
+						if (isset($myLocation[1])) echo "<br><div class='location'>" . $myLocation[1] . "</div><br />";
+						if (isset($myTemperature[1])) echo "<div class='temperature-icon'><br /><div class='temperature fleft'>" . $myTemperature[1] . "</div><br />";
+						if (isset($mySkyConditions[1])) echo "<div class='" . meteoclass($myTemperatureC[1]) . " icon fright'><span aria-hidden='true' id='skycondition' class='icon-" . skyclass($mySkyConditions[1]) . "'></span></div><br />";
+						echo "<div class='clear'></div><br /></div>";
+						if (isset($myTime[1])) echo "<div class='time'>" . $myTime[1] . "</div><br />";
+						if (isset($myWind[1])) echo "<div class='wind'><strong>Wind :&nbsp;</strong>" . $myWind[1] . "</div><br />";
+						if (isset($myVisibility[1])) echo "<div class='visibility'><strong>Visibility :&nbsp;</strong>" . $myVisibility[1] . "</div><br />";
+						if (isset($myDewPoint[1])) echo "<div class='dewpoint'><strong>DewPoint :&nbsp;</strong>" . $myDewPoint[1] . "</div><br />";
+						if (isset($myRelativeHumidity[1])) echo "<div class='humidity'><strong>Relative Humidity :&nbsp;</strong>" . $myRelativeHumidity[1] . "</div><br />";
+						if (isset($myPressure[1])) echo "<div class='pressure'><strong>Pressure :&nbsp;</strong>" . $myPressure[1] . "</div><br />";
 					} else {
-						echo "Nus data ".$_GET["city"];
+						echo "No data for ".$_GET["city"];
 						}
 				echo "</div>";
 				}
@@ -140,10 +141,5 @@
 		}		
 	?>
 </form>
-
-
-<span class="box1">
-		<span aria-hidden="true" class="<?php echo skyclass($mySkyConditions[1]); ?>"></span>
-</span>
 </body>
 </html>

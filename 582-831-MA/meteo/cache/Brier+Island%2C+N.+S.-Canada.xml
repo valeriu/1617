@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<string xmlns="http://www.webserviceX.NET">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;CurrentWeather&gt;
+  &lt;Location&gt;Brier Island, N. S., Canada (CWVU) 44-17-09N 066-20-48W&lt;/Location&gt;
+  &lt;Time&gt;Jun 27, 2013 - 07:00 PM EDT / 2013.06.27 2300 UTC&lt;/Time&gt;
+  &lt;Wind&gt; from the N (010 degrees) at 9 MPH (8 KT):0&lt;/Wind&gt;
+  &lt;Temperature&gt; 52.0 F (11.1 C)&lt;/Temperature&gt;
+  &lt;DewPoint&gt; 51.1 F (10.6 C)&lt;/DewPoint&gt;
+  &lt;RelativeHumidity&gt; 96%&lt;/RelativeHumidity&gt;
+  &lt;PressureTendency&gt; 0.00 inches (0.1 hPa) lower than three hours ago&lt;/PressureTendency&gt;
+  &lt;Status&gt;Success&lt;/Status&gt;
+&lt;/CurrentWeather&gt;</string>
