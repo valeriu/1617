@@ -69,7 +69,7 @@
 			$City = preg_match_all('/City&gt;(.*)&lt;/', $getcityurl, $myCity, PREG_SET_ORDER);
 				
 			if(!$City)
-				echo "<div class='error'>No data for ".$_GET["pays"]."</div>";
+				$errorMessage = $errorPays;
 			else {	
 				echo "<select id=\"cityList\" name=\"city\">";
 				echo "<option>Sélectionnez une Ville</option>";
@@ -133,13 +133,15 @@
 						if (isset($myRelativeHumidity[1])) echo "<div class='humidity'><strong>Relative Humidity :&nbsp;</strong>" . $myRelativeHumidity[1] . "</div>";
 						if (isset($myPressure[1])) echo "<div class='pressure'><strong>Pressure :&nbsp;</strong>" . $myPressure[1] . "</div>";
 					} else {
-						echo "<div class='error'>No data for ".$_GET["city"]."</div>";
+						$errorMessage = $errorInfo;
 						}
 				echo "</div>";
 				}
 
 			}
-		}		
+		}
+
+		echo $errorMessage;
 	?>
 </body>
 </html>
