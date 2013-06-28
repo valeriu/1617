@@ -52,7 +52,7 @@
 		}
 		return $meteoclass;	
 	}
-
+//Meteo CSS icons
 	function skyclass ($sky) {
 		$condition = preg_replace("/ /", "", $sky);
 
@@ -72,7 +72,7 @@
 				return $condition;
 				break;
 			default :
-				return "N_A";
+				return "n_a";
 		}
 	}
 ?>

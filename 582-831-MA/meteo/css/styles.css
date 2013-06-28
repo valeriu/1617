@@ -8,7 +8,9 @@
 	font-weight: normal;
 	font-style: normal;
 }
-
+body{
+	background: #D7E6ED;
+}
 /*http://www.colorhexa.com/035898*/
 #meteo-70{
 	background-color: #ff3300;
@@ -78,7 +80,7 @@ Instead of a list of all class selectors,
 you can use the generic selector below, but it's slower:
 [class*="icon-"] {
 */
-.icon-thunderstorm, .icon-sunny, .icon-snow, .icon-showers, .icon-rain, .icon-partlycloudy, .icon-overcast, .icon-mostlycloudy, .icon-haze, .icon-fog, .icon-drizzle, .icon-blowingsnow {
+.icon-n_a, .icon-thunderstorm, .icon-sunny, .icon-snow, .icon-showers, .icon-rain, .icon-partlycloudy, .icon-overcast, .icon-mostlycloudy, .icon-haze, .icon-fog, .icon-drizzle, .icon-blowingsnow {
 	font-family: 'icomoon';
 	speak: none;
 	font-style: normal;
@@ -87,6 +89,9 @@ you can use the generic selector below, but it's slower:
 	text-transform: none;
 	line-height: 1;
 	-webkit-font-smoothing: antialiased;
+}
+.icon-n_a{
+
 }
 .icon-thunderstorm:before {
 	content: "\e000";
@@ -124,45 +129,139 @@ you can use the generic selector below, but it's slower:
 .icon-blowingsnow:before {
 	content: "\e00b";
 }
+.error {
+	width: 380px;
+	border: 1px solid #f3f3f3;
+	margin: 10px auto;
+	padding: 20px 10px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	background: red;
+	color: #fff;
+	font-weight: 700;
+	font-size: 22px;
+	text-align: center;	
+}
+form {
+	width: 380px;
+	border: 1px solid #f3f3f3;
+	margin: 10px auto;
+	padding: 20px 10px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	background: #dedede;
+}
 
-	.meteo {
-		width: 380px;
-		border: 1px solid #f3f3f3;
-		margin: 10px;
-		padding: 20px 10px;
-		-webkit-border-radius: 30px;
-		-moz-border-radius: 30px;
-		border-radius: 30px;
-		background: #FF6600;
-	}
-	.fleft{
-		float: left;
-	}
-	.fright {
-		float: right;
-	}
-	.clear {
-		clear: both;
-	}
-	.location{
-		font-size: 24px;
-		font-weight: 700;
-		
-	}
-	.temperature{
-		font-size: 42px;
-		font-weight: 700;
-		margin-top: 44px;
-	}
-	.icon{
+.meteo {
+	width: 380px;
+	border: 1px solid #f3f3f3;
+	margin: 10px auto;
+	padding: 20px 10px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	background: #FF6600;
+}
+.fleft{
+	float: left;
+}
+.fright {
+	float: right;
+}
+.clear {
+	clear: both;
+}
+.location{
+	font-size: 24px;
+	font-weight: 700;
+	
+}
+.temperature{
+	font-size: 42px;
+	font-weight: 700;
+	margin-top: 44px;
+}
+.icon{
 	width: 128px;
 	height: 128px;
-	}
-	.time, .wind, .visibility, .dewpoint, .humidity, .pressure{
-		margin: 10px 0;
-	}
-	.time:hover, .wind:hover, .visibility:hover, .dewpoint:hover, .humidity:hover, .pressure:hover{
-		border-left: 2px solid #f3f3f3;
-		padding-left: 2px;
-	}
+}
+.time, .wind, .visibility, .dewpoint, .humidity, .pressure{
+	margin: 10px 0;
+}
+.time:hover, .wind:hover, .visibility:hover, .dewpoint:hover, .humidity:hover, .pressure:hover{
+	border-left: 2px solid #f3f3f3;
+	padding-left: 2px;
+}
 
+/*custom select*/
+span.customSelect { 
+    font:12px sans-serif;
+    background:#fff url(http://i48.tinypic.com/2u7rpec.png) right center no-repeat;
+    border:1px solid #ddd;
+    color:#555;
+    padding:7px 9px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px 2px;
+    width:350px;
+}
+.customSelect.customSelectHover {
+    border-color:#c7c7c7;
+    background-color:#f5f5f5;
+}
+.customSelect.customSelectFocus {
+    border-color:Orange;
+}
+.customSelect.customSelectOpen {
+    border-color:OliveDrab;
+}
+
+.customSelect.customSelectChanged {
+	-webkit-animation: changed 0.5s;
+	-moz-animation: changed 0.5s;
+	-ms-animation: changed 0.5s;
+	animation: changed 0.5s;
+}
+
+@-webkit-keyframes changed {
+	0%, 100%{
+		-webkit-box-shadow: 0px 0px 14px 5px rgba(151, 67, 159, 0);
+		box-shadow: 0px 0px 14px 5px rgba(151, 67, 159, 0);
+	}
+	50%{
+		-webkit-box-shadow: 0px 0px 14px 5px rgba(151, 67, 159, 0.5);
+		box-shadow: 0px 0px 14px 5px rgba(151, 67, 159, 0.5);
+	}
+}
+
+@-moz-keyframes changed {
+	0%, 100%{
+		-moz-box-shadow: 0px 0px 14px 5px rgba(151, 67, 159, 0);
+		box-shadow: 0px 0px 14px 5px rgba(151, 67, 159, 0);
+	}
+	50%{
+		-moz-box-shadow: 0px 0px 14px 5px rgba(151, 67, 159, 0.5);
+		box-shadow: 0px 0px 14px 5px rgba(151, 67, 159, 0.5);
+	}
+}
+
+@keyframes changed {
+	0%, 100%{
+		box-shadow:0px 0px 14px 5px rgba(151, 67, 159, 0);
+	}
+	50% {
+		box-shadow:0px 0px 14px 5px rgba(151, 67, 159, 0.5);
+	}
+}
+@-ms-keyframes changed {
+	0%, 100%{
+		-ms-box-shadow:0px 0px 14px 5px rgba(151, 67, 159, 0);
+		box-shadow:0px 0px 14px 5px rgba(151, 67, 159, 0);
+	}
+	50% {
+		-ms-box-shadow: 0px 0px 14px 5px rgba(151, 67, 159, 0);
+		box-shadow: 0px 0px 14px 5px rgba(151, 67, 159, 0.5);
+	}
+}

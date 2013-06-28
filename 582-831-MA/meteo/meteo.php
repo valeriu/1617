@@ -8,7 +8,13 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title>Meteo - Yan et Valeriu</title>
 	<link href="./css/styles.css" rel="stylesheet" type="text/css" />
+	<script src="./js/jquery-1.9.1.min.js"></script>
+	<script src="./js/custom-select.min.js"></script>
 	<script type="text/javascript">
+	$(document).ready(function(){
+   		$('#paysList').customSelect();
+   		$('#cityList').customSelect();
+	});
 	window.addEventListener('load', function(){
 		var selectPays = document.getElementById('paysList');
 		var selectCity = document.getElementById('cityList');
@@ -29,9 +35,9 @@
 		for($i = 0, $j = count($pays); $i < $j; $i++)
 		{
 			if(isset($_GET["pays"]) && $pays[$i] == $_GET["pays"])
-				echo "<option selected='selected'>" . $pays[$i] . "</option>";	
+				echo "<option selected='selected'>" . $pays[$i] . "</option>\n";	
 			else
-				echo "<option>" . $pays[$i] . "</option>";
+				echo "<option>" . $pays[$i] . "</option>\n";
 		}
 	?>
 </select>
@@ -71,13 +77,13 @@
 			if(!$City)
 				$errorMessage = $errorPays;
 			else {	
-				echo "<select id=\"cityList\" name=\"city\">";
+				echo "<br><br><select id=\"cityList\" name=\"city\">";
 				echo "<option>Sélectionnez une Ville</option>";
 				foreach($myCity as $citybycountry) {
 					if(isset($_GET["city"]) && $citybycountry[1] == $_GET["city"])
-						echo "<option selected='selected'>" .$citybycountry[1]. "</option>";
+						echo "<option selected='selected'>" .$citybycountry[1]. "</option>\n";
 					else	
-						echo "<option>" .$citybycountry[1]. "</option>";
+						echo "<option>" .$citybycountry[1]. "</option>\n";
 				}
 				echo "</select></form>";
 			
@@ -109,8 +115,8 @@
 
 						$Location = 		preg_match('/Location&gt;(.*)\(/', $getmeteourl, $myLocation);
 						$Time = 			preg_match('/Time&gt;(.*)\/ /', $getmeteourl, $myTime);
-						$Wind =	 			preg_match('/Wind&gt;(.*)&lt;/', $getmeteourl, $myWind);
-						$Visibility = 		preg_match('/Visibility&gt;(.*)&lt;/', $getmeteourl, $myVisibility);
+						$Wind =	 			preg_match('/Wind&gt;(.*):/', $getmeteourl, $myWind);
+						$Visibility = 		preg_match('/Visibility&gt;(.*):/', $getmeteourl, $myVisibility);
 						$SkyConditions = 	preg_match('/SkyConditions&gt;(.*)&lt;/', $getmeteourl, $mySkyConditions);
 						$Temperature = 		preg_match('/Temperature&gt;(.*)&lt;/', $getmeteourl, $myTemperature);
 						$TemperatureC = 	preg_match('/Temperature&gt;(.*)F/', $getmeteourl, $myTemperatureC);
