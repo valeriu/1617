@@ -72,7 +72,7 @@
 				return $condition;
 				break;
 			default :
-				return "n_a";
+				return "none";
 		}
 	}
 ?>
