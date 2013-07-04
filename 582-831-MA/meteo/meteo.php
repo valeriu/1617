@@ -126,13 +126,15 @@
 						$Pressure = 		preg_match('/Pressure&gt;(.*)&lt;/', $getmeteourl, $myPressure);
 						$Status = 			preg_match('/Status&gt;(.*)&lt;/', $getmeteourl, $myStatus);
 							
-				if (isset($myTemperatureC[1])) echo "<div id='meteo' class=".meteoclass($myTemperatureC[1]).">";
+				
 					if (isset($myStatus[1]) && $myStatus[1] == "Success") {
-						//if (isset($myTemperatureC[1])) meteoclass($myTemperatureC[1]). "";
+						echo "<div id='meteo' class=".meteoclass($myTemperatureC[1]).">";
 						if (isset($myLocation[1])) echo "<br><div class='location'>" . $myLocation[1] . "</div>";
-						if (isset($myTemperature[1])) echo "<div class='temperature-icon'><div class='temperature fleft'>" . $myTemperature[1] . "</div>";
-						echo "<div class='icon fright'><span aria-hidden='true' id='skycondition' class='icon-" . skyclass($mySkyConditions[1]) . "'></span></div>";
-						echo "<div class='clear'></div></div>";
+						if (isset($myTemperature[1])) {
+							echo "<div class='temperature-icon'><div class='temperature fleft'>" . $myTemperature[1] . "</div>";
+							echo "<div class='icon fright'><span aria-hidden='true' id='skycondition' class='icon-" . skyclass($mySkyConditions[1]) . "'></span></div>";
+							echo "<div class='clear'></div></div>";
+							}
 						if (isset($myTime[1])) echo "<div class='time'><strong>Time :&nbsp;</strong>" . $myTime[1] . "</div>";
 						if (isset($myWind[1])) echo "<div class='wind'><strong>Wind :&nbsp;</strong>" . $myWind[1] . "</div>";
 						if (isset($myVisibility[1])) echo "<div class='visibility'><strong>Visibility :&nbsp;</strong>" . $myVisibility[1] . "</div>";

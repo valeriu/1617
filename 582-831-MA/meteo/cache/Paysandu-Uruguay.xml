@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<string xmlns="http://www.webserviceX.NET">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;CurrentWeather&gt;
+  &lt;Location&gt;Paysandu, Uruguay (SUPU) 32-20S 058-02W 61M&lt;/Location&gt;
+  &lt;Time&gt;Jun 19, 2010 - 05:00 PM EDT / 2010.06.19 2100 UTC&lt;/Time&gt;
+  &lt;Status&gt;Success&lt;/Status&gt;
+&lt;/CurrentWeather&gt;</string>
