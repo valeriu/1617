@@ -127,7 +127,7 @@
 						$Status = 			preg_match('/Status&gt;(.*)&lt;/', $getmeteourl, $myStatus);
 							
 				
-					if (isset($myStatus[1]) && $myStatus[1] == "Success") {
+					if (isset($myStatus[1]) && $myStatus[1] == "Success" && isset($myTemperature[1])) {
 						echo "<div id='meteo' class=".meteoclass($myTemperatureC[1]).">";
 						if (isset($myLocation[1])) echo "<br><div class='location'>" . $myLocation[1] . "</div>";
 						if (isset($myTemperature[1])) {
@@ -147,12 +147,16 @@
 				echo "</div>";
 				}
 
-			}
-		}
+			} 
+		}else {echo "</form>";}
 
 		echo $errorMessage;
 	?>
 <div class="copyright">
+	<div class="example">Example: 
+		<a href="meteo.php?pays=Antarctica&city=Amundsen-Scott%20South%20Pole%20Statio">South Pole</a>, 
+		<a href="meteo.php?pays=Canada&city=Montreal%20/%20Mirabel">Montreal</a> ou 
+		<a href="meteo.php?pays=Australia&city=Katherine%20Aerodrome">Katherine</a></div>
 	<div class="meteolist">
 		<div class="meteo-70">+70</div>
 		<div class="meteo-60">+60</div>

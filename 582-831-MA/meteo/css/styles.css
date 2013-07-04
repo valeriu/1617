@@ -107,6 +107,7 @@ body{
 .meteo-10{
 	background-color: #ffe500;
 }
+
 .meteo-0 {
 	background-color: #fffdeb;
 }
@@ -135,6 +136,14 @@ body{
 #skycondition {
 	font-size: 128px;
 }
+.meteo-70 #skycondition,
+.meteo-60 #skycondition,
+.meteo-50 #skycondition,
+.meteo-40 #skycondition,
+.meteo-20 #skycondition,
+.meteo--70 #skycondition,
+.meteo--60 #skycondition,
+.meteo--50 #skycondition {color:#fff;}
 
 .meteolist {
 	
@@ -142,6 +151,9 @@ body{
 	margin: 0 auto;
 	margin-top: 80px;
 }
+.example {
+	width: 420px;
+	margin: 0 auto;}
 .authors {
 	
 	width: 420px;
