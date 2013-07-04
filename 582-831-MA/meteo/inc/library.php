@@ -68,7 +68,9 @@
 			case "rain" :
 			case "showers" :
 			case "snow" :
-			case "thunderstorm" :			
+			case "thunderstorm" :
+			case "clear" :
+			case "mostlyclear" :			
 				return $condition;
 				break;
 			default :

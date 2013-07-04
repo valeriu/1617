@@ -27,7 +27,7 @@ Instead of a list of all class selectors,
 you can use the generic selector below, but it's slower:
 [class*="icon-"] {
 */
-.icon-thunderstorm, .icon-sunny, .icon-snow, .icon-showers, .icon-rain, .icon-partlycloudy, .icon-overcast, .icon-mostlycloudy, .icon-haze, .icon-fog, .icon-drizzle, .icon-blowingsnow, .icon-none {
+.icon-clear, .icon-mostlyclear, .icon-thunderstorm, .icon-sunny, .icon-snow, .icon-showers, .icon-rain, .icon-partlycloudy, .icon-overcast, .icon-mostlycloudy, .icon-haze, .icon-fog, .icon-drizzle, .icon-blowingsnow, .icon-none {
 	font-family: 'meteocons';
 	speak: none;
 	font-style: normal;
@@ -36,6 +36,12 @@ you can use the generic selector below, but it's slower:
 	text-transform: none;
 	line-height: 1;
 	-webkit-font-smoothing: antialiased;
+}
+.icon-clear:before {
+	content: "\e00d";
+}
+.icon-mostlyclear:before {
+	content: "\e00e";
 }
 .icon-thunderstorm:before {
 	content: "\e000";
