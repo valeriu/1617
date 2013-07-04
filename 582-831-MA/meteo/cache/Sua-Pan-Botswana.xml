@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<string xmlns="http://www.webserviceX.NET">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;CurrentWeather&gt;
+  &lt;Location&gt;Sua-Pan, Botswana (FBSN) 20-28S 025-59E 904M&lt;/Location&gt;
+  &lt;Time&gt;Aug 09, 2011 - 08:00 AM EDT / 2011.08.09 1200 UTC&lt;/Time&gt;
+  &lt;Wind&gt; Calm:0&lt;/Wind&gt;
+  &lt;Visibility&gt; greater than 7 mile(s):0&lt;/Visibility&gt;
+  &lt;Temperature&gt; 84 F (29 C)&lt;/Temperature&gt;
+  &lt;DewPoint&gt; 51 F (11 C)&lt;/DewPoint&gt;
+  &lt;RelativeHumidity&gt; 32%&lt;/RelativeHumidity&gt;
+  &lt;Status&gt;Success&lt;/Status&gt;
+&lt;/CurrentWeather&gt;</string>

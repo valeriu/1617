@@ -18,9 +18,10 @@
 	window.addEventListener('load', function(){
 		var selectPays = document.getElementById('paysList');
 		var selectCity = document.getElementById('cityList');
-		
+		//console.log(selectCity);
 		selectPays.addEventListener('change', function(){ window.location =  "meteo.php?pays=" + this.value;}, false);
-		selectCity.addEventListener('change', function(){  window.location =  "meteo.php?pays=<?php if(isset($_GET["pays"])) echo $_GET["pays"];?>&city="+this.value;	}, false);
+		if (selectCity)
+			selectCity.addEventListener('change', function(){  window.location =  "meteo.php?pays=<?php if(isset($_GET["pays"])) echo $_GET["pays"];?>&city="+this.value;	}, false);
 	}, false);
 	</script>
 	<!--[if IE]>
@@ -44,12 +45,12 @@
 	<?php
 		if(isset($_GET["pays"])){
 			//oras
-			//$cityurl = "http://www.webservicex.net/globalweather.asmx/GetCitiesByCountry?CountryName=Moldova,%20Republic%20of";
-			$cityurl = "http://www.webservicex.net/globalweather.asmx/GetCitiesByCountry?CountryName=".urlencode($_GET["pays"]);
+			
+			$cityurl = $getCitiesByCountry.urlencode($_GET["pays"]);
 
 	//cache start
 			$cache_file_pays = "cache/pays-".urlencode($_GET["pays"]).".xml";
-			$cache_life_pays = '86400'; //in seconds
+			
 
 			$filem_time = @filemtime($cache_file_pays); 
 
@@ -89,10 +90,10 @@
 			
 				// start
 				if(isset($_GET["city"])){
-					$meteourl = "http://www.webservicex.net/globalweather.asmx/GetWeather?CityName=".urlencode($_GET["city"])."&CountryName=".urlencode($_GET["pays"]);
+					$meteourl = $getCityName.urlencode($_GET["city"])."&CountryName=".urlencode($_GET["pays"]);
 				// start cache
 					$cache_file_city = "cache/".urlencode($_GET["city"])."-".urlencode($_GET["pays"]).".xml";
-					$cache_life_city = '600'; //in seconds
+					
 
 					$filem_time = @filemtime($cache_file_city); 
 
@@ -125,12 +126,12 @@
 						$Pressure = 		preg_match('/Pressure&gt;(.*)&lt;/', $getmeteourl, $myPressure);
 						$Status = 			preg_match('/Status&gt;(.*)&lt;/', $getmeteourl, $myStatus);
 							
-				if (isset($myTemperatureC[1])) echo "<div class='meteo' id=".meteoclass($myTemperatureC[1]).">";
+				if (isset($myTemperatureC[1])) echo "<div id='meteo' class=".meteoclass($myTemperatureC[1]).">";
 					if (isset($myStatus[1]) && $myStatus[1] == "Success") {
 						//if (isset($myTemperatureC[1])) meteoclass($myTemperatureC[1]). "";
 						if (isset($myLocation[1])) echo "<br><div class='location'>" . $myLocation[1] . "</div>";
 						if (isset($myTemperature[1])) echo "<div class='temperature-icon'><div class='temperature fleft'>" . $myTemperature[1] . "</div>";
-						echo "<div class='" . meteoclass($myTemperatureC[1]) . " icon fright'><span aria-hidden='true' id='skycondition' class='icon-" . skyclass($mySkyConditions[1]) . "'></span></div>";
+						echo "<div class='icon fright'><span aria-hidden='true' id='skycondition' class='icon-" . skyclass($mySkyConditions[1]) . "'></span></div>";
 						echo "<div class='clear'></div></div>";
 						if (isset($myTime[1])) echo "<div class='time'><strong>Time :&nbsp;</strong>" . $myTime[1] . "</div>";
 						if (isset($myWind[1])) echo "<div class='wind'><strong>Wind :&nbsp;</strong>" . $myWind[1] . "</div>";
@@ -149,5 +150,26 @@
 
 		echo $errorMessage;
 	?>
+<div class="copyright">
+	<div class="meteolist">
+		<div class="meteo-70">+70</div>
+		<div class="meteo-60">+60</div>
+		<div class="meteo-50">+50</div>
+		<div class="meteo-40">+40</div>
+		<div class="meteo-30">+30</div>
+		<div class="meteo-20">+20</div>
+		<div class="meteo-10">+10</div>
+		<div class="meteo-0">0</div>
+		<div class="meteo--10">-10</div>
+		<div class="meteo--20">-20</div>
+		<div class="meteo--30">-30</div>
+		<div class="meteo--40">-40</div>
+		<div class="meteo--50">-50</div>
+		<div class="meteo--60">-60</div>
+		<div class="meteo--70">-70</div>
+
+	</div><div class="clear"></div>
+	<div class="authors">Valeriu Tihai et Yan Boucher-Bouchard	| 582-831-MA - 2013</div>
+</div>
 </body>
 </html>

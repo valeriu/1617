@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<string xmlns="http://www.webserviceX.NET">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;CurrentWeather&gt;
+  &lt;Location&gt;OWENS DOWNTOWN AIRPORT, SC, United States (KCUB) 33-58N 081-00W 56M&lt;/Location&gt;
+  &lt;Time&gt;Jul 03, 2013 - 08:53 PM EDT / 2013.07.04 0053 UTC&lt;/Time&gt;
+  &lt;Wind&gt; Calm:0&lt;/Wind&gt;
+  &lt;Visibility&gt; 10 mile(s):0&lt;/Visibility&gt;
+  &lt;SkyConditions&gt; partly cloudy&lt;/SkyConditions&gt;
+  &lt;Temperature&gt; 75.0 F (23.9 C)&lt;/Temperature&gt;
+  &lt;DewPoint&gt; 73.0 F (22.8 C)&lt;/DewPoint&gt;
+  &lt;RelativeHumidity&gt; 93%&lt;/RelativeHumidity&gt;
+  &lt;Pressure&gt; 30.2 in. Hg (1022 hPa)&lt;/Pressure&gt;
+  &lt;Status&gt;Success&lt;/Status&gt;
+&lt;/CurrentWeather&gt;</string>

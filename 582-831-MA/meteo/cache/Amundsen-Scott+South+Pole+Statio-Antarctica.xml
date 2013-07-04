@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<string xmlns="http://www.webserviceX.NET">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;CurrentWeather&gt;
+  &lt;Location&gt;Amundsen-Scott South Pole Station, Antarctica (NZSP) 90-00S 00-00E 2835M&lt;/Location&gt;
+  &lt;Time&gt;Jul 03, 2013 - 07:50 PM EDT / 2013.07.03 2350 UTC&lt;/Time&gt;
+  &lt;Wind&gt; from the NNW (340 degrees) at 23 MPH (20 KT):0&lt;/Wind&gt;
+  &lt;Visibility&gt; less than 1 mile:0&lt;/Visibility&gt;
+  &lt;SkyConditions&gt; overcast&lt;/SkyConditions&gt;
+  &lt;Temperature&gt; -54 F (-48 C)&lt;/Temperature&gt;
+  &lt;Wind&gt;Windchill: -95 F (-71 C):2&lt;/Wind&gt;
+  &lt;Pressure&gt; 28.56 in. Hg (967 hPa)&lt;/Pressure&gt;
+  &lt;Status&gt;Success&lt;/Status&gt;
+&lt;/CurrentWeather&gt;</string>

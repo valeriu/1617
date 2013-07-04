@@ -80,57 +80,77 @@ body{
 	background: #D7E6ED;
 }
 /*http://www.colorhexa.com/035898*/
-#meteo-70{
+.meteo-70{
 	background-color: #ff3300;
 }
-#meteo-60{
+.meteo-60{
 	background-color: #ff6600;
 }
-#meteo-50{
+.meteo-50{
 	background-color: #ff8000;
 }
-#meteo-40{
+.meteo-40{
 	background-color: #ff9900;
 }
-#meteo-30{
+.meteo-30{
 	background-color: #ffb200;
 }
-#meteo-20 {
+.meteo-20 {
 	background-color: #ffcc00;
 }
-#meteo-10{
+.meteo-10{
 	background-color: #ffe500;
 }
-#meteo-0 {
+.meteo-0 {
 	background-color: #fffdeb;
 }
-#meteo--10 {
+.meteo--10 {
 	background-color: #e6f5fc;
 }
-#meteo--20 {
+.meteo--20 {
 	background-color: #c3e7f8;
 }
-#meteo--30 {
+.meteo--30 {
 	background-color: #a0daf4;
 }
-#meteo--40 {
+.meteo--40 {
 	background-color: #7cccf0;
 }
-#meteo--50 {
+.meteo--50 {
 	background-color: #59beec;
 }
-#meteo--60 {
+.meteo--60 {
 	background-color: #36b0e8;
 }
-#meteo--70 {
+.meteo--70 {
 	background-color: #19a0dd;
 }
 
 #skycondition {
 	font-size: 128px;
 }
+
+.meteolist {
+	
+	width: 420px;
+	margin: 0 auto;
+	margin-top: 80px;
+}
+.authors {
+	
+	width: 420px;
+	margin: 0 auto;
+	margin-top: 80px;
+}
+.meteolist div {
+	float: left;
+	width: 18px;
+	height: 15px;
+	font-size: 12px;
+	padding: 5px;
+}
 .error {
-	width: 380px;
+	width: 420px;
 	border: 1px solid #f3f3f3;
 	margin: 10px auto;
 	padding: 20px 10px;
@@ -144,7 +164,7 @@ body{
 	text-align: center;	
 }
 form {
-	width: 380px;
+	width: 420px;
 	border: 1px solid #f3f3f3;
 	margin: 10px auto;
 	padding: 20px 10px;
@@ -154,15 +174,14 @@ form {
 	background: #dedede;
 }
 
-.meteo {
-	width: 380px;
+#meteo {
+	width: 420px;
 	border: 1px solid #f3f3f3;
 	margin: 10px auto;
 	padding: 20px 10px;
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
 	border-radius: 30px;
-	background: #FF6600;
 }
 .fleft{
 	float: left;
@@ -198,14 +217,14 @@ form {
 /*custom select*/
 span.customSelect { 
     font:12px sans-serif;
-    background:#fff url(http://i48.tinypic.com/2u7rpec.png) right center no-repeat;
+    background:#fff url("../i/arrow-select.png") right center no-repeat;
     border:1px solid #ddd;
     color:#555;
     padding:7px 9px;
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
     border-radius: 2px 2px;
-    width:350px;
+    width:390px;
 }
 .customSelect.customSelectHover {
     border-color:#c7c7c7;

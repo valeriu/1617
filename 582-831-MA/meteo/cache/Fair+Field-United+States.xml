@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<string xmlns="http://www.webserviceX.NET">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;CurrentWeather&gt;
+  &lt;Location&gt;Fair Field, IA, United States (KFFL) 41-03N 091-59W&lt;/Location&gt;
+  &lt;Time&gt;Jul 03, 2013 - 09:35 PM EDT / 2013.07.04 0135 UTC&lt;/Time&gt;
+  &lt;Wind&gt; from the E (080 degrees) at 6 MPH (5 KT):0&lt;/Wind&gt;
+  &lt;Visibility&gt; 10 mile(s):0&lt;/Visibility&gt;
+  &lt;SkyConditions&gt; clear&lt;/SkyConditions&gt;
+  &lt;Temperature&gt; 71 F (22 C)&lt;/Temperature&gt;
+  &lt;DewPoint&gt; 60 F (16 C)&lt;/DewPoint&gt;
+  &lt;RelativeHumidity&gt; 68%&lt;/RelativeHumidity&gt;
+  &lt;Pressure&gt; 30.03 in. Hg (1016 hPa)&lt;/Pressure&gt;
+  &lt;Status&gt;Success&lt;/Status&gt;
+&lt;/CurrentWeather&gt;</string>

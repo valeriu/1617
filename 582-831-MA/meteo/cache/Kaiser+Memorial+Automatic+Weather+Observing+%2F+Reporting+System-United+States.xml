@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<string xmlns="http://www.webserviceX.NET">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;CurrentWeather&gt;
+  &lt;Location&gt;Kaiser Lake Ozark, Lee C Fine Memorial Airport, MO, United States (KAIZ) 38-06N 092-33W&lt;/Location&gt;
+  &lt;Time&gt;Jul 03, 2013 - 09:15 PM EDT / 2013.07.04 0115 UTC&lt;/Time&gt;
+  &lt;Wind&gt; Calm:0&lt;/Wind&gt;
+  &lt;Visibility&gt; 10 mile(s):0&lt;/Visibility&gt;
+  &lt;Temperature&gt; 71 F (22 C)&lt;/Temperature&gt;
+  &lt;DewPoint&gt; 60 F (16 C)&lt;/DewPoint&gt;
+  &lt;RelativeHumidity&gt; 68%&lt;/RelativeHumidity&gt;
+  &lt;Pressure&gt; 30.04 in. Hg (1017 hPa)&lt;/Pressure&gt;
+  &lt;Status&gt;Success&lt;/Status&gt;
+&lt;/CurrentWeather&gt;</string>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<string xmlns="http://www.webserviceX.NET">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;CurrentWeather&gt;
+  &lt;Location&gt;Ezeiza Aerodrome, Argentina (SAEZ) 34-49S 058-32W 20M&lt;/Location&gt;
+  &lt;Time&gt;Jul 03, 2013 - 09:00 PM EDT / 2013.07.04 0100 UTC&lt;/Time&gt;
+  &lt;Wind&gt; from the ENE (070 degrees) at 6 MPH (5 KT):0&lt;/Wind&gt;
+  &lt;Visibility&gt; greater than 7 mile(s):0&lt;/Visibility&gt;
+  &lt;Temperature&gt; 62 F (17 C)&lt;/Temperature&gt;
+  &lt;DewPoint&gt; 57 F (14 C)&lt;/DewPoint&gt;
+  &lt;RelativeHumidity&gt; 82%&lt;/RelativeHumidity&gt;
+  &lt;Pressure&gt; 29.91 in. Hg (1013 hPa)&lt;/Pressure&gt;
+  &lt;Status&gt;Success&lt;/Status&gt;
+&lt;/CurrentWeather&gt;</string>

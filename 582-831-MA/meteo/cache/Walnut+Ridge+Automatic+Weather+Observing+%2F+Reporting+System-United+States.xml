@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<string xmlns="http://www.webserviceX.NET">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;CurrentWeather&gt;
+  &lt;Location&gt;Walnut Ridge, Walnut Ridge Regional Airport, AR, United States (KARG) 36-08N 090-55W&lt;/Location&gt;
+  &lt;Time&gt;Jul 03, 2013 - 09:15 PM EDT / 2013.07.04 0115 UTC&lt;/Time&gt;
+  &lt;Wind&gt; from the E (100 degrees) at 3 MPH (3 KT):0&lt;/Wind&gt;
+  &lt;Visibility&gt; 10 mile(s):0&lt;/Visibility&gt;
+  &lt;SkyConditions&gt; clear&lt;/SkyConditions&gt;
+  &lt;Temperature&gt; 77 F (25 C)&lt;/Temperature&gt;
+  &lt;DewPoint&gt; 57 F (14 C)&lt;/DewPoint&gt;
+  &lt;RelativeHumidity&gt; 50%&lt;/RelativeHumidity&gt;
+  &lt;Pressure&gt; 30.04 in. Hg (1017 hPa)&lt;/Pressure&gt;
+  &lt;Status&gt;Success&lt;/Status&gt;
+&lt;/CurrentWeather&gt;</string>

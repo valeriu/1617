@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<string xmlns="http://www.webserviceX.NET">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;CurrentWeather&gt;
+  &lt;Location&gt;ST LOUIS DOWNTOWN AIRPORT, IL, United States (KCPS) 38-34N 090-09W 126M&lt;/Location&gt;
+  &lt;Time&gt;Jul 03, 2013 - 08:53 PM EDT / 2013.07.04 0053 UTC&lt;/Time&gt;
+  &lt;Wind&gt; from the SSE (150 degrees) at 6 MPH (5 KT):0&lt;/Wind&gt;
+  &lt;Visibility&gt; 10 mile(s):0&lt;/Visibility&gt;
+  &lt;SkyConditions&gt; clear&lt;/SkyConditions&gt;
+  &lt;Temperature&gt; 75.9 F (24.4 C)&lt;/Temperature&gt;
+  &lt;DewPoint&gt; 61.0 F (16.1 C)&lt;/DewPoint&gt;
+  &lt;RelativeHumidity&gt; 59%&lt;/RelativeHumidity&gt;
+  &lt;Pressure&gt; 30.04 in. Hg (1017 hPa)&lt;/Pressure&gt;
+  &lt;Status&gt;Success&lt;/Status&gt;
+&lt;/CurrentWeather&gt;</string>

@@ -1,4 +1,13 @@
 <?php 
+//Pays
+$getCitiesByCountry = "http://www.webservicex.net/globalweather.asmx/GetCitiesByCountry?CountryName=";
+$cache_life_pays = "86400"; //in seconds
+
+//Ville
+$getCityName = "http://www.webservicex.net/globalweather.asmx/GetWeather?CityName=";
+$cache_life_city = '600'; //in seconds
+
+
 // no data for city
 $errorInfo = "<div class='error'>No data for ".$_GET["city"]."</div>";
 
