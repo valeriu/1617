@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<string xmlns="http://www.webserviceX.NET">&lt;NewDataSet&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;Slovenia&lt;/Country&gt;
+    &lt;City&gt;Ljubljana / Brnik&lt;/City&gt;
+  &lt;/Table&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;Slovenia&lt;/Country&gt;
+    &lt;City&gt;Maribor / Slivnica&lt;/City&gt;
+  &lt;/Table&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;Slovenia&lt;/Country&gt;
+    &lt;City&gt;Murska Sobota&lt;/City&gt;
+  &lt;/Table&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;Slovenia&lt;/Country&gt;
+    &lt;City&gt;Portoroz&lt;/City&gt;
+  &lt;/Table&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;Slovenia&lt;/Country&gt;
+    &lt;City&gt;Ljubljana / Brnik&lt;/City&gt;
+  &lt;/Table&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;Slovenia&lt;/Country&gt;
+    &lt;City&gt;Portoroz / Secovlje&lt;/City&gt;
+  &lt;/Table&gt;
+&lt;/NewDataSet&gt;</string>

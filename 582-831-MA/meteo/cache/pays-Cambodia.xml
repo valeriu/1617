@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<string xmlns="http://www.webserviceX.NET">&lt;NewDataSet&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;Cambodia&lt;/Country&gt;
+    &lt;City&gt;Kompong-Cham&lt;/City&gt;
+  &lt;/Table&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;Cambodia&lt;/Country&gt;
+    &lt;City&gt;Phnom-Penh / Pochentong&lt;/City&gt;
+  &lt;/Table&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;Cambodia&lt;/Country&gt;
+    &lt;City&gt;Siemreap&lt;/City&gt;
+  &lt;/Table&gt;
+&lt;/NewDataSet&gt;</string>

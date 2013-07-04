@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<string xmlns="http://www.webserviceX.NET">&lt;NewDataSet&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;New Caledonia&lt;/Country&gt;
+    &lt;City&gt;Moue Ile Des Pins&lt;/City&gt;
+  &lt;/Table&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;New Caledonia&lt;/Country&gt;
+    &lt;City&gt;Koumac Nlle-Caledonie&lt;/City&gt;
+  &lt;/Table&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;New Caledonia&lt;/Country&gt;
+    &lt;City&gt;Ouanaham Ile Lifou&lt;/City&gt;
+  &lt;/Table&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;New Caledonia&lt;/Country&gt;
+    &lt;City&gt;Noumea Nlle-Caledonie&lt;/City&gt;
+  &lt;/Table&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;New Caledonia&lt;/Country&gt;
+    &lt;City&gt;La Roche Ile Mare&lt;/City&gt;
+  &lt;/Table&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;New Caledonia&lt;/Country&gt;
+    &lt;City&gt;Ouloup Ile Ouvea&lt;/City&gt;
+  &lt;/Table&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;New Caledonia&lt;/Country&gt;
+    &lt;City&gt;La Tontouta Nlle-Caledonie&lt;/City&gt;
+  &lt;/Table&gt;
+&lt;/NewDataSet&gt;</string>

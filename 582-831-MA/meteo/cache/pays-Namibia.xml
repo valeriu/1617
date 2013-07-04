@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<string xmlns="http://www.webserviceX.NET">&lt;NewDataSet&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;Namibia&lt;/Country&gt;
+    &lt;City&gt;Gobabis&lt;/City&gt;
+  &lt;/Table&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;Namibia&lt;/Country&gt;
+    &lt;City&gt;Grootfontein&lt;/City&gt;
+  &lt;/Table&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;Namibia&lt;/Country&gt;
+    &lt;City&gt;Keetmanshoop&lt;/City&gt;
+  &lt;/Table&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;Namibia&lt;/Country&gt;
+    &lt;City&gt;Rundu&lt;/City&gt;
+  &lt;/Table&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;Namibia&lt;/Country&gt;
+    &lt;City&gt;J. G. Strijdom&lt;/City&gt;
+  &lt;/Table&gt;
+&lt;/NewDataSet&gt;</string>

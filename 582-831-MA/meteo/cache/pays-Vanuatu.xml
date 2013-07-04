@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<string xmlns="http://www.webserviceX.NET">&lt;NewDataSet&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;Vanuatu&lt;/Country&gt;
+    &lt;City&gt;Sola Vanua Lava&lt;/City&gt;
+  &lt;/Table&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;Vanuatu&lt;/Country&gt;
+    &lt;City&gt;Lamap Malekula&lt;/City&gt;
+  &lt;/Table&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;Vanuatu&lt;/Country&gt;
+    &lt;City&gt;Pekoa Airport Santo&lt;/City&gt;
+  &lt;/Table&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;Vanuatu&lt;/Country&gt;
+    &lt;City&gt;Bauerfield Efate&lt;/City&gt;
+  &lt;/Table&gt;
+&lt;/NewDataSet&gt;</string>

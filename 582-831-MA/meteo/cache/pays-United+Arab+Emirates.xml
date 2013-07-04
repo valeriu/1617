@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<string xmlns="http://www.webserviceX.NET">&lt;NewDataSet&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;United Arab Emirates&lt;/Country&gt;
+    &lt;City&gt;Abu Dhabi International Airport&lt;/City&gt;
+  &lt;/Table&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;United Arab Emirates&lt;/Country&gt;
+    &lt;City&gt;Abu Dhabi Bateen Airport&lt;/City&gt;
+  &lt;/Table&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;United Arab Emirates&lt;/Country&gt;
+    &lt;City&gt;Al Ain International Airport&lt;/City&gt;
+  &lt;/Table&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;United Arab Emirates&lt;/Country&gt;
+    &lt;City&gt;Dubai International Airport&lt;/City&gt;
+  &lt;/Table&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;United Arab Emirates&lt;/Country&gt;
+    &lt;City&gt;Fujairah&lt;/City&gt;
+  &lt;/Table&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;United Arab Emirates&lt;/Country&gt;
+    &lt;City&gt;Ras Al Khaimah International Airport&lt;/City&gt;
+  &lt;/Table&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;United Arab Emirates&lt;/Country&gt;
+    &lt;City&gt;Sharjah International Airport&lt;/City&gt;
+  &lt;/Table&gt;
+&lt;/NewDataSet&gt;</string>

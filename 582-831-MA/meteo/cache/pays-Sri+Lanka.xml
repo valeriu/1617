@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<string xmlns="http://www.webserviceX.NET">&lt;NewDataSet&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;Sri Lanka&lt;/Country&gt;
+    &lt;City&gt;Katunayake&lt;/City&gt;
+  &lt;/Table&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;Sri Lanka&lt;/Country&gt;
+    &lt;City&gt;Anuradhapura&lt;/City&gt;
+  &lt;/Table&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;Sri Lanka&lt;/Country&gt;
+    &lt;City&gt;Batticaloa&lt;/City&gt;
+  &lt;/Table&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;Sri Lanka&lt;/Country&gt;
+    &lt;City&gt;Ratmalana&lt;/City&gt;
+  &lt;/Table&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;Sri Lanka&lt;/Country&gt;
+    &lt;City&gt;Trincomalee&lt;/City&gt;
+  &lt;/Table&gt;
+&lt;/NewDataSet&gt;</string>

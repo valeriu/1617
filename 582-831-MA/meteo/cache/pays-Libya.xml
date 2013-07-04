@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<string xmlns="http://www.webserviceX.NET">&lt;NewDataSet&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;Libyan Arab Jamahiriya&lt;/Country&gt;
+    &lt;City&gt;Ghat&lt;/City&gt;
+  &lt;/Table&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;Libyan Arab Jamahiriya&lt;/Country&gt;
+    &lt;City&gt;Kufra&lt;/City&gt;
+  &lt;/Table&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;Libyan Arab Jamahiriya&lt;/Country&gt;
+    &lt;City&gt;Benina&lt;/City&gt;
+  &lt;/Table&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;Libyan Arab Jamahiriya&lt;/Country&gt;
+    &lt;City&gt;Sebha&lt;/City&gt;
+  &lt;/Table&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;Libyan Arab Jamahiriya&lt;/Country&gt;
+    &lt;City&gt;Tripoli Inter-National Airport&lt;/City&gt;
+  &lt;/Table&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;Libyan Arab Jamahiriya&lt;/Country&gt;
+    &lt;City&gt;Ghadames&lt;/City&gt;
+  &lt;/Table&gt;
+&lt;/NewDataSet&gt;</string>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<string xmlns="http://www.webserviceX.NET">&lt;NewDataSet&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;French Polynesia&lt;/Country&gt;
+    &lt;City&gt;Tahiti-Faaa&lt;/City&gt;
+  &lt;/Table&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;French Polynesia&lt;/Country&gt;
+    &lt;City&gt;Tubuai&lt;/City&gt;
+  &lt;/Table&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;French Polynesia&lt;/Country&gt;
+    &lt;City&gt;Bora-Bora&lt;/City&gt;
+  &lt;/Table&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;French Polynesia&lt;/Country&gt;
+    &lt;City&gt;Rangiroa / Tuamoto Island&lt;/City&gt;
+  &lt;/Table&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;French Polynesia&lt;/Country&gt;
+    &lt;City&gt;Hao&lt;/City&gt;
+  &lt;/Table&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;French Polynesia&lt;/Country&gt;
+    &lt;City&gt;Mururoa&lt;/City&gt;
+  &lt;/Table&gt;
+&lt;/NewDataSet&gt;</string>

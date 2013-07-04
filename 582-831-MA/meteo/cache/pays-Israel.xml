@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<string xmlns="http://www.webserviceX.NET">&lt;NewDataSet&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;Israel&lt;/Country&gt;
+    &lt;City&gt;Ben-Gurion International Airport&lt;/City&gt;
+  &lt;/Table&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;Israel&lt;/Country&gt;
+    &lt;City&gt;Beer-Sheva&lt;/City&gt;
+  &lt;/Table&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;Israel&lt;/Country&gt;
+    &lt;City&gt;Eilat&lt;/City&gt;
+  &lt;/Table&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;Israel&lt;/Country&gt;
+    &lt;City&gt;Sde-Haifa Haifa&lt;/City&gt;
+  &lt;/Table&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;Israel&lt;/Country&gt;
+    &lt;City&gt;Ovda&lt;/City&gt;
+  &lt;/Table&gt;
+&lt;/NewDataSet&gt;</string>

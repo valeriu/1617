@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<string xmlns="http://www.webserviceX.NET">&lt;NewDataSet&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;Samoa&lt;/Country&gt;
+    &lt;City&gt;Apia / Upolu Island&lt;/City&gt;
+  &lt;/Table&gt;
+  &lt;Table&gt;
+    &lt;Country&gt;Samoa&lt;/Country&gt;
+    &lt;City&gt;Faleolo Intl / Apia&lt;/City&gt;
+  &lt;/Table&gt;
+&lt;/NewDataSet&gt;</string>
